@@ -13,16 +13,16 @@ main_model = load_model("model/main_model.h5")
 
 # Load the crop-specific models for disease prediction
 crop_models = {
-    "Rice": load_model("model/rice.h5"),
+    "Corn": load_model("model/corn.h5"),
     "Wheat": load_model("model/wheat.h5"),
-    "Corn": load_model("model/corn.h5")
+    "Rice": load_model("model/rice.h5")
 }
 
 # Define class names for disease prediction
 class_names = {
-    "Rice": ['Rice_Brown_Spot', 'Rice_Healthy', 'Rice_Leaf_Blast', 'Rice_Neck_Blast'],
     "Wheat": ['White Healthy', 'White Yellow Rus', 'White Red Rus', 'White Green Rus'],
-    "Corn": ['Corn_Common_Rust', 'Corn_Gray_Leaf_Spot', 'Corn_Healthy', 'Corn_Northern_Leaf_Blight']
+    "Rice": ['Rice Brown Spot', 'Rice Healthy', 'Rice Leaf Blast', 'Rice Neck Blast'],
+    "Corn": ['Corn Common Rust', 'Corn Gray Leaf Spot', 'Corn Healthy', 'Corn Northern Leaf Blight']
 }
 
 @app.get('/ping')
