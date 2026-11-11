@@ -1,0 +1,18 @@
+[project]
+name = "crop-disease-prediction"
+version = "2.0.0"
+description = "Two-stage CNN crop and disease classifier served with FastAPI."
+authors = [{ name = "Vishavjit Singh Saini" }]
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.pytest.ini_options]
+pythonpath = [".", "tests"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]

@@ -1,0 +1,15 @@
+{
+  "image_size": 256,
+  "crops": ["Corn", "Wheat", "Rice"],
+  "diseases": {
+    "Corn": ["Corn Common Rust", "Corn Gray Leaf Spot", "Corn Healthy", "Corn Northern Leaf Blight"],
+    "Wheat": ["Wheat Healthy", "Wheat Yellow Rust", "Wheat Red Rust", "Wheat Green Rust"],
+    "Rice": ["Rice Brown Spot", "Rice Healthy", "Rice Leaf Blast", "Rice Neck Blast"]
+  },
+  "model_files": {
+    "router": "main_model.h5",
+    "Corn": "corn.h5",
+    "Wheat": "wheat.h5",
+    "Rice": "rice.h5"
+  }
+}
